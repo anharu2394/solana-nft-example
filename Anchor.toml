@@ -1,0 +1,17 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+solana_nft_example = "7mD7Xd7vLfmUb8TocxpJcj1c3EkfGDQfqVkAUyWhxsxc"
+[programs.devnet]
+solana_nft_example = "7mD7Xd7vLfmUb8TocxpJcj1c3EkfGDQfqVkAUyWhxsxc"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/anharu/my-solana-wallet/my-keypair.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
