@@ -94,12 +94,11 @@ describe('solana_nft_example', () => {
 
     console.log("Metadata address: ", metadataAddress.toBase58());
     console.log("MasterEdition: ", masterEdition.toBase58());
-    console.log(program.methods)
 
     const tx = await program.methods.mintNft(
       mintKey.publicKey,
-      "https://arweave.net/y5e5DJsiwH0s_ayfMwYk-SnrZtVZzHLQDSTZ5dNRUHA",
-      "NFT Title",
+      "https://arweave.net/wLQwK2ENbXVfQQ-n7tsVbGVREx61oVqSWJFQgoorzug",
+      "My tomie art",
     )
       .accounts({
         mintAuthority: wallet.publicKey,
